@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta content="width=device-width, initial-scale=5" name="viewport" />
+
+    <title>User Profile</title>
+    <link rel="stylesheet" type="text/css" href="CSS/EDITPROFILE.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="Javascript/editprofilescript.js"></script>
+</head>
+<body  class="scroll-auto">
+    <section>
+    <!--<div class="bg"></div>-->
+    
+    <div class="container">
+        <div class="contactinfo" >
+            <div>
+                <header class="box1">
+        <div class="userbox">
+            <div class="user">
+                <img src="images/profile1.png" id="profilepic" alt="user image">
+                <div class="name">
+                    <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    { pageLanguage: 'en' },
+                    'google_translate_element'
+                );
+            }
+        </script>
+
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+                </div>
+            </div>
+
+                    <div class="navbar">
+                    <ul>
+                        <li><a href="PROFILE.html"><b>Profile</b></a></li>
+                        <li><a href="EDITPROFILE.html"><b>Edit Profile</b></a></li>
+                        <li><a href="CHANGEPASSWORD.html"><b>Change Password</b></a></li>
+                        <li><a href="HISTORY.html"><b>History</b></a></li>
+                        <li><a href="home.html"><b>Home</b></a></li>
+                        <li><a href="sign.html"><b>Logout</b></a></li>
+                    </ul>
+                    </div>
+        
+                </header>
+            </div>
+        </div>
+        
+        <div id="menu" class="fas fa-bars"></div>
+        
+        <!-- <div class="row">
+        <div class="col-2-lg col-2-md col-2-sm"></div>
+        <div class="editform col-8-lg col-8-md col-8-sm">
+            <h2>Edit Profile</h2>
+            <div class="formbox">
+                <img class="image" src="images/about1.jpeg" alt="profile photo">   
+            <div><a class="link" href="#">Click here to change profile photo</a></div> 
+            <div class="row">
+                <div class="col-6-lg col-12-md">
+                    <span>Name</span>
+                    <input type="text" name="" required>
+                </div>
+                <div class="col-6-lg col-12-md">
+                    <span>Username</span>
+                    <input type="text" name="" required>
+                </div>
+                <div class="col-6-lg col-12-md">
+                    <span>E-mail</span>
+                    <input type="text" name="" required>
+                </div>
+                <div class="col-6-lg col-12-md">
+                    <span>Mobile Number</span>
+                    <input type="text" name="" required>
+                </div>
+                <br>
+                <div >
+                    <button class="button" type="submit" value="Submit">Edit</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-2-lg col-2-md col-2-sm"></div>
+        </div> -->
+    
+    
+    
+    
+    
+        <div id="pop" class="modal" >
+
+            <form class="modal-content animate">
+                <!-- <form class="modal-content animate" action="/action_page.php" method="post"> -->
+                <!-- <div class="imgcontainer">
+            <span onclick="document.getElementById('pop').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div> -->
+    
+          <br>
+        
+          <div class="popcontainer">
+                    
+                        <h1>EDIT PROFILE</h1>
+                    <br><br>
+                    <div class="editname">
+                    <label for="uname"><b>Name</b></label>
+                    <input type="text" placeholder="Edit Name" name="uname" required>
+                </div>
+                    <br><br>
+                    <br>
+                    <div class="editusername">
+                    <label for="psw"><b>Username</b></label>
+                    <input type="text" placeholder="Edit Username" name="psw" required>
+                </div>
+                    <br><br>
+                    <br>
+                    <div class="editemail">
+                    <label for="psw"><b>Email</b></label>
+                    <input type="text" placeholder="Edit Email" name="psw" required>
+                </div>
+                    <br><br>
+                    <br>
+                    <div class="editmob">
+                    <label for="psw"><b>Mobile Number</b></label>
+                    <input type="text" placeholder="Edit Mobile Number" name="psw" required>
+                </div>
+                    <br>
+                    <br>
+                    <button type="submit" class="popbtn" class="cancelbtn">Edit</button>
+                   
+                
+            </div>
+            </form>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    </section>
+    
+</body>
+</html>
+    

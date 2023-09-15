@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightgreen;
+  }
+  
+  .animation-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .animation {
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    animation: fadeOut 30s ease-in-out;
+  }
+  
+  @keyframes fadeOut {
+    0%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  
+
+  @media screen and (max-width: 992px) {
+    body {
+      background-color:aliceblue;
+    }
+    img
+    {
+      max-width:100%;
+      border: 5px solid lightgreen;
+    }
+  }

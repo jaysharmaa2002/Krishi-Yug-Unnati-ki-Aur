@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Logout - Krishi Yug</title>
+
+    <!-- <script type="text/javascript" src="home.js"></script> -->
+    <link rel="stylesheet" href="sign-in-up.css">
+</head>
+
+<body>
+
+
+
+    <div id="topNav">
+        <ul id="smallNav">
+            <li>
+<!-- 
+                <div id="google_translate_element"></div>
+
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement(
+                            { pageLanguage: 'en' },
+                            'google_translate_element'
+                        );
+                    }
+                </script>
+
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+		cb=googleTranslateElementInit">
+        </script> -->
+
+                 <div id="google_translate_element"></div>
+      
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          var ckDomain;
+          for (var ckDomain = window.location.hostname.split("."); 2 < ckDomain.length;) {
+            ckDomain.shift();
+          }
+          ckDomain = ";domain=" + ckDomain.join(".");
+          // domain cookie
+          document.cookie = "googtrans=/en/hi; expires=Thu, 07-Mar-2047 20:22:40 GMT; path=/" + ckDomain;
+          // host-only cookie (with no domain name definition)
+          document.cookie = "googtrans=/en/hi; expires=Thu, 07-Mar-2047 20:22:40 GMT; path=/";
+          new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            autoDisplay: false,
+            layout: google.translate.TranslateElement
+          }, 'google_translate_element');
+        }
+      </script>
+      
+      <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </script>
+            </li>
+            <li><a href="#" id="h">Translate :</a></li>
+        </ul>
+    </div>
+
+    <center>
+        <div class="container">
+            <div class="blueBg">
+                <div class="box signin">
+                    <h2 class="h" style="color: black;">Already have an Account ?</h2>
+                    <button class="signinBtn">Sign in</button>
+                </div>
+                <div class="box signup">
+                    <h2 class="h" style="color: black;">Don't have an Account ?</h2>
+                    <button class="signupBtn">Sign Up</button>
+                </div>
+            </div>
+
+            <script>
+                /*function for validation of log in*/
+                function validateName() {
+                var x = document.forms["myForm"]["fname"].value;
+                var y = document.forms["myForm"]["pwd"].value;
+                if (x == "" || x == null || y == "" || y == null) {
+                    alert("Insufficient data");
+                        return false;
+                    }
+                }
+                /*function for validation of signup form*/
+                function validateSignup() {
+                var x = document.forms["myForm2"]["n"].value;
+                var y = document.forms["myForm2"]["u"].value;
+                var a = document.forms["myForm2"]["m"].value;
+                var b = document.forms["myForm2"]["e"].value;
+                var c = document.forms["myForm2"]["p"].value;
+                if (x == "" || x == null || y == "" || y == null || a == "" || a == null || b == "" || b == null || c == "" || c == null ) {
+                    alert("Insufficient data to Register");
+                        return false;
+                    }
+                else {
+                    display.document.getElementById('pop').style.display='block';
+                    }
+                }
+            </script>
+
+            <div class="formBx">
+                <div class="form signinForm">
+                    <form name="myForm" action="home.html"  method="get" required>
+                        <h3>Sign In</h3>
+                        <input name="fname" type="text" placeholder="Username" >
+                        <input name= "pwd" type="password" placeholder="Password">
+                        <!-- <button type='button' class="submitbtn" value="Login" onclick="location.href='home.html'">Login</button> -->
+                        <button type="submit" value="Submit" class="submitbtn" onclick="return validateName()">Login</button>
+                        <a href="#" class="forgot">Forgot Password</a>
+                    </form>
+                </div>
+
+                <div class="form signupForm">
+                    <!-- <form name="myForm2"  method="post" required> -->
+                        <h3>Sign Up</h3>
+                        <input name="n" type="text" placeholder="Name" required>
+                        <input name="u" type="text" placeholder="Username" required>
+                        <input name="m" type="text" placeholder="Mobile Number" required>
+                        <input name="e" type="text" placeholder="Email Address" required>
+                        <input name="p" type="password" placeholder="Password" required>
+                        <button type='button' class="submitbtn" value="Register"
+                            onclick="document.getElementById('pop').style.display='block'" style="width:auto;">Register</button>
+                        <!--<button type="submit" value="Submit" class="submitbtn" onclick="return validateSignup()">Register</button>-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <!--javascript code for popup validation-->
+    <script>
+        function validatePop() {
+        var x = document.forms["pop"]["e1"].value;
+        var y = document.forms["pop"]["otp"].value;
+        if (x == "" || x == null || y == "" || y == null) {
+            alert("Insufficient data");
+                return false;
+            }
+        }
+    </script>
+
+
+
+    <div id="pop" class="modal">
+
+        <form class="modal-content animate">
+            <!-- <form class="modal-content animate" action="/action_page.php" method="post"> -->
+            <!-- <div class="imgcontainer">
+        <span onclick="document.getElementById('pop').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      </div> -->
+
+      <br>
+
+            <div class="popcontainer">
+                <h1><center>PLEASE VERIFY YOUR EMAIL</center></h1>
+
+                <form name="pop" action="home.html"  method="get" required >
+                <label for="uname"><b>Email</b></label>
+                <input name="e1" type="text" placeholder="Enter Email">
+                <br>
+                <label for="psw"><b>Please enter the OTP</b></label>
+                <input name="otp" type="text" placeholder="Enter OTP">
+                <br><br>
+    
+                <button type="submit" value="Submit" class="popbtn" onclick="return validatePop()">Verify</button>
+                </form>
+                <!-- <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label> -->
+            </div>
+
+
+            <!-- <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('pop').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div> -->
+        </form>
+    </div>
+
+
+
+
+    <!-- 
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script> -->
+
+
+    <script>
+        const signinBtn = document.querySelector('.signinBtn');
+        const signupBtn = document.querySelector('.signupBtn');
+        const formBx = document.querySelector('.formBx');
+        const body = document.querySelector('body');
+
+        signupBtn.onclick = function () {
+            formBx.classList.add('active');
+            body.classList.add('active');
+        }
+        signinBtn.onclick = function () {
+            formBx.classList.remove('active');
+            body.classList.remove('active');
+        }
+
+    </script>
+
+</body>
+
+</html>

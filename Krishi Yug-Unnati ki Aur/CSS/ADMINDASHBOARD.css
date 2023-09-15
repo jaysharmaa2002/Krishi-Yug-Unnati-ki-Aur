@@ -1,0 +1,529 @@
+
+body
+{
+	background-color:white;
+	width:100%;
+  font-family: 'Open Sans', sans-serif;
+}
+#a
+{
+	background-color:#FFFAFA;	
+  /* position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden; */
+}
+
+#a1
+{
+	color:#154734;
+}
+
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.darkk
+{
+  background-color: transparent;
+  margin-left:-40px;
+}
+
+
+.logo
+{
+	margin-left:0px;
+	margin-top:0px;
+	height:100px;
+	width:160px;
+	border-radius:10px;
+	border:2px solid green;
+	left:0;
+}
+
+
+#navigation
+{
+	font-size:18px;
+	margin-top:0px;
+	color:#154734;
+}
+
+.navbar-nav >li
+{
+	margin-left:17px;
+	margin-right:20px;
+}
+ 
+.icon
+{
+	font-size: 30px;
+} 
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.li
+{
+	cursor:pointer;  
+	color:#0C090A;
+	border-radius:7px;
+}
+.li:hover
+{
+border-bottom:solid;
+border-color:green;
+border-width:3px;
+
+}
+
+
+.banerfor
+{
+	height:auto;
+	max-width:100%;
+}
+
+
+
+.bb
+{
+	font-size:20px;
+	background-color:lightgreen;
+	color:darkgreen;
+}
+
+.qf
+{
+	background-color:white;
+	border-bottom:2px solid darkgreen; 
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	font-weight:bold;
+}
+
+h4
+{
+color:darkgreen;
+}
+
+footer{
+  color:grey;
+	background-color:white;
+
+}
+footer a{
+  color: grey;
+
+}
+footer a:hover{
+  color:darkgreen;
+text-decoration:none;
+}
+
+
+.footer-bottom{
+  background: darkgreen;
+	background-color:white;
+  padding: 2em;
+}
+.footer-top{
+  background: #2d4958;
+	background-color:white; 
+}
+.footer-middle{
+   background: #3d6277;
+background-color:white; 
+  padding-top: 2em;
+  color:  grey;
+}
+
+.subnavigation-container{
+  background: #3d6277;
+}
+.subnavigation .nav-link{
+  color: white;
+  font-weight: bold;
+}
+.subnavigation-container{
+  text-align: center;
+}
+.subnavigation-container .navbar{
+  display: inline-block;
+  margin-bottom: -6px;
+}
+.col-subnav a{
+  padding: 1rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+.col-subnav .active{
+  border-top:5px solid orange;
+ background: white;
+  color: white;
+}
+
+
+
+
+/* khushi changes-------------------------------------------------------------------------------------------- */
+
+#rabout{
+  display: flex;
+  width: 46%;
+  height: 15%;
+  padding-left: 2%;
+  padding-right: 2%;
+  float:right;
+}
+#labout{
+  margin-left: 20px;
+  display: flex;
+  width: 50%;
+  float:left;
+  height: 15%;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #5cb874;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #919191;
+}
+
+/* .img-responsive{
+  height: 550px;
+} */
+
+
+#con{
+  border: black solid 2px;
+  margin: 0% 10% 0% 10%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#topbtn{
+   color:white;
+   background-color: red;
+   border-radius: 5px;
+   /* max-button:30%; */
+   text-align: center;
+   height: 35px;
+   border: 2px solid red;
+}
+
+#topbtn:hover{
+   color: white;
+   border: 2px solid rgb(235, 1, 1);
+   background-color: rgb(235, 1, 1);
+}
+
+
+
+
+
+/*CSS FOR SIDE BAR*/
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: black;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/*CSS FOR SIDE BARS ENDS HERE*/
+
+
+
+
+
+
+
+
+
+
+/*CSS FOR CARDS FOR ADMIN*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width:33%;
+  padding: 0px 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+/*CSS FOR CARDS ENDS HERE*/
+
+
+
+
+
+/*CSS FOR TABLE OF SELLER AND BUYER*/
+
+table {
+  border-collapse: collapse;
+  width: 65%;
+}
+
+th, td {
+  text-align: center;
+  padding: 20px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+
+
+
+
+
+
+

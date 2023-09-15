@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --yellow:#f9ca24;
+}
+
+
+/* nav--------------------------------------------------------------------------------------------------- */
+/* #h{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif, Courier;
+}
+
+#h.active{
+    color: black;
+}
+#smallNav{
+    list-style-type: none;
+    position: absolute;
+    margin-top: 0%;
+    margin-right: 5%;
+    padding: 0;
+    overflow: hidden;
+    z-index: 500;
+}
+
+.homegoogleli{
+    float: right;
+    padding: 0 20px;
+} */
+
+
+
+section{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../images/profilePage6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#menu{
+    position: fixed;
+    top: 2rem; right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+section .container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+
+section .container .contactinfo{
+    position: absolute;
+    top: 50px;
+    width: 350px;
+    height: calc(100% - -85px);
+    background: #f9ca24;
+    /* background: green; */
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+
+section .container .contactinfo .box1{
+    position: relative;
+    margin: 1px 0;
+}
+
+section .container .contactinfo .box1 .ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.font{
+    font-size: 15px;
+    /* word-wrap: break-word; */
+}
+
+section .container .editform{
+    /* position: absolute; */
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    /*width: calc(100%-150px);*/
+    width: 80%;
+    padding-left: 250px;
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.2);
+    margin-top: 2%;
+    height: 122%;
+    border-radius: 5px;
+
+
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /*Enable scroll if needed*/
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    padding: 2% 16%;
+}
+
+.image{
+    height: 230px;
+    width: 230px;
+    margin-bottom: 7%;
+    margin-left: 0%;
+    border-radius: 50%;
+}
+
+.link{
+    margin-right: 18%;
+    margin-top: 18%;
+}
+
+section .container .editform h2{
+    color: green;
+    font-size: 254%;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+section .container .editform .formbox{
+    position: relative;
+    /*display: flex;*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-left: 15%;
+}
+
+/*section .container .editform .formbox .inputBox w50 .s1{
+    color: green;
+}*/
+
+section .container .editform .formbox .inputBox{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+/* section .container .editform .formbox .inputBox.w50{
+    width: 47%;
+} */
+
+section .container .editform .formbox .inputBox.w100{
+    width: 100%;
+}
+.button{
+   font-size: 150%;
+    /* font-weight: ; */
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: green;
+}
+
+
+/*------*/
+
+header .user #profilepic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 205px;
+    width: 205px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1%;
+    border: 0.3rem solid var(--yellow);
+    margin-top: -9%;
+}
+
+header .user .name{
+    /* font-size: 1%; */
+    color: white;
+    text-align: center;
+}
+
+header .navbar{
+    width: 100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+    font-size: 31%;
+    text-align: center;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: white;
+    color: black;
+    font-size: 350%;
+    border-radius: 0%;
+    padding-left: 4%;
+}
+
+header .navbar ul li a:hover{ text-decoration: none; }
+
+
+header .navbar ul li a:hover{
+    background: var(--yellow);
+}
+
+table {
+ border-collapse: separate;
+ border-spacing: 0 25px;
+ width: 50%;
+font-size: 175%;
+    margin-bottom: 20%;
+}
+
+
+
+
+
+/*media-queries*/
+/* @media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+} */
+
+@media(max-width:1200px){
+    #menu{
+        display: block;
+    }
+   section .container .contactinfo.toggle{
+        left: 0%;
+       
+        margin-left: -1%;
+        margin-top: -4.6%;
+        min-height: 140%
+    }
+    header .navbar ul{
+        padding-top: 0%;
+    }
+    header .navbar ul li a{
+        line-height: 210%;
+    }
+    section .container .contactinfo{
+        left: -380px;
+    }
+    section .container .editform {
+        margin-left: 0%;
+        margin-right: 0%;
+        border-radius: 5px;
+    }
+    section .container .editform .formbox{
+        margin-left: -30%;
+        margin-right: 0%;
+    }
+}
+/* 
+@media(max-width:845px){
+    section .container .editform .formbox{
+        display:block;
+         margin-top: -3%
+    }
+    section .container .editform h2{
+        margin-top: -10%;
+    }
+}
+
+@media(max-width:615px){
+    section .container .editform h2{
+        margin-top: -10%;
+         margin-left: -30%;
+        font-size: 250%;
+    }
+}
+
+@media(max-width:389px){
+    section .container .editform .formbox{
+        display:block;
+        margin-left: -40%;
+        margin-top: -3%
+    }
+    section .container .editform h2{
+        margin-top: -10%;
+        margin-left: -30%;
+        font-size: 200%;
+    }
+}
+
+@media(max-width:615px){
+    table{
+        margin-left: -77px;
+        font-size: 25px;
+    }
+    
+}
+
+@media(max-width: 485px){
+    table{
+        margin-left: -85px;
+        font-size:20px;
+    }
+    
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+
+		table, thead, tbody, th, td, tr {
+			display: block;
+        }
+		 
+        table{
+            margin-top: 10px;
+        }
+    
+        
+		td { */
+			/* Behave  like a "row" */
+			/* border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		td:before { */
+			/* Now like a table header */
+			/* position: absolute; */
+			/* Top/left values mimic padding */
+			/* top: 0;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+
+	} */
+
+
+
+
+
+
+
+
+
+/* Trial--------------------------------------------------------------------------------------*/
+ /* Set a style for all buttons */
+ .popbtn{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .popbtn:hover {
+    opacity: 0.8;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /*textboxes -----------------------------------------------------*/
+.editname, .editusername, .editemail, .editmob{
+    padding-left: 150px;
+}
+
+.popcontainer input, label{
+    /* line-height: 1000px; */
+    padding-left: 20px;
+}
+
+.popcontainer .editname label{
+    padding-right: 82px;
+}
+.popcontainer .editemail label{
+    padding-right: 85px;
+}
+.popcontainer .editusername label{
+    padding-right: 51px;
+}
+.popcontainer .editmob label{
+    padding-right: 16px;
+  }
+
+
+
+
+
+
+  
+  /* Center the image and position the close button */
+  /* .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  } */
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .popcontainer {
+    padding: 16px 16px 16px 150px;
+    margin: 0% 10% 2% 10%;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    /* display: none; Hidden by default */
+    /* position: relative; Stay in place */
+    /* z-index: 0; Sit on top */
+
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /*Enable scroll if needed*/
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    padding: 2% 16%;
+    
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    /* border: 1px solid #888; */
+    width: 70%; /* Could be more or less, depending on screen size */
+  }
+  
+
+
+  /* Add Zoom Animation */
+  /* .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  } */
+  
+  /* Change styles for span and cancel button on extra small screens */
+  /* @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  } */
+
+#pop{
+    display: block;
+}
+
+/*trial end-----------------------------------------------------------------------------------*/
+
+section .modal{
+    z-index: 0;
+}
+
+/*User image----------------------------------------------------------------------------*/
+/* 
+.user{
+    position: relative;
+    height: fit-content;
+    width: unset;
+    margin: 10% auto 0;
+    color: #fff;
+}
+
+.user img{
+    position: absolute;
+    left: 25px;
+    width: auto;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+}
+
+.user-front:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+.userbox{
+    position: absolute;
+} */
+
+/*User image end----------------------------------------------------------------------------*/
+
+@media(max-width:1800px) and (min-width:1200px){
+    .popcontainer {
+        margin: 0% 10% 2% 10%;
+        padding: 16px 16px 16px 110px;
+        border: 1px solid white;
+        border-radius: 5px;
+      }
+      .editname, .editusername, .editemail, .editmob{
+        padding-left: 10px;  
+        }
+}
+
+@media(max-width:1200px) and (min-width:700px){
+    .popcontainer {
+        margin: 0% 10% 2% 0%;
+        padding: 16px 16px 16px 70px;
+        border: 1px solid white;
+        border-radius: 5px;
+    
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        /* border: 1px solid #888; */
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+      .editname, .editusername, .editemail, .editmob{
+    padding-left: 0px;  
+    }
+    section .container .contactinfo .box1{
+        /* position: relative; */
+        margin: 0px 0px;
+    }
+
+    .font{
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+
+}
+
+    @media(max-width:700px) {
+    .popcontainer {
+        /* position: fixed; */
+        margin: 0% 10% 2% 10%;
+        padding: 16px 16px 16px 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: white;
+      }
+      
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        /* border: 1px solid #888; */
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+      .editname, .editusername, .editemail, .editmob{
+    padding-left: 0px;  
+    }
+
+    .lineh{
+        line-height: 0px;
+    }
+    
+.font{
+    font-size: 15px;
+    word-wrap: break-word;
+    }
+    .popcontainer input, label{
+        padding-left: 0px;
+    }
+    
+}
+
+@media(max-width: 600px){
+    .editname, .editusername, .editemail, .editmob{
+        padding-left: -10px;  
+        font-size: small;
+        line-height: 9px;
+    }
+    .font{
+        font-size: 12px;
+        word-wrap: normal;
+        }
+    #gmail{
+        word-wrap: break-word;
+    }
+    .popcontainer input, label{
+        padding-left: 0px;
+    }
+    
+    .popcontainer .editname label{
+        padding-right: 8px;
+    }
+    .popcontainer .editemail label{
+        padding-right: 4px;
+    }
+    .popcontainer .editusername label{
+        padding-right: 10px;
+    }
+    .popcontainer .editmob label{
+        padding-right: 10px;
+      }
+      .popcontainer h1{
+          font-size: 35px;
+          font-weight: bold;
+          text-align: center;
+      }
+      .modal{
+          padding: 0px;
+          margin-top: 50px;
+      }
+}
+
